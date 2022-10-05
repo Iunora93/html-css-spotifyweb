@@ -6,24 +6,33 @@
 
 body {
     height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {      
     position: fixed; 
     right: 0;
     left: 300px;
-    background-color: red;
+    background-color: #080b12;
 }
 
 .page-container {
     display: flex;
     height: calc(100% - 80px);
     background-color: aqua;
+    color: gray;
 }
 
 aside {
     width: 300px;
-    background-color: blueviolet;
+    background-color: black;
+    overflow-y: auto;
+}
+
+.text-aside {
+    font-size: 16px;
+    margin: 15px 0;
 }
 
 main {
@@ -34,4 +43,133 @@ main {
 footer {
     height: 80px;
     background-color: bisque;
+}
+
+.top-aside-600 {
+    display: none;
+}
+
+.down-end-aside-600 {
+    display: none;
+}
+
+i {
+    margin-right: 5px;
+}
+/* ----------
+    HEADER
+----------- */
+.upgrade {
+    text-align: right;
+}
+.btn-upgrade {
+    padding: 15px 40px;
+    border-radius: 100px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    margin: 20px 5px;
+}
+
+/* ---------
+    ASIDE
+    -------- */
+    .container {
+       margin: 20px; 
+
+    }
+    .logo-spotify {
+    width: 140px;
+    color: white;
+    }
+
+    .down-aside-700-1100 {
+        margin-top: 30px;
+    }
+
+    .plus-square {
+        font-size: 40px;
+        margin-right: 10px;
+    }
+
+    .down-end-aside-700-1100 {
+        margin-top: 400px;
+    }
+
+.create-playlist {
+    display: flex;
+    align-items: center;
+}
+
+.circle-arrow {
+    background-color: transparent;
+    color: gray;
+    border: none;
+}
+
+.arrow {
+    border: 1px solid gray;
+    border-radius: 100%;
+    padding: 7px;
+    text-align: center;
+}
+.circle-user {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.create-user {
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width:660px) {
+    .container {
+        text-align: center;
+        margin: 0 auto; 
+     }
+    aside {
+        width: 50px;
+    }
+    main {
+        width: calc(100% - 50px);
+    }
+    header {      
+        position: fixed; 
+        right: 0;
+        left: 50px;
+        background-color: red;
+    }
+    .top-aside-700-1100 {
+        display: none;
+    }
+    .top-aside-600 {
+        display: block;
+    }
+    .down-aside-700-1100 {
+        display: none;
+    }
+    .logo-mobile {
+        width: 30px;
+        color: white;
+    }
+    .down-end-aside-700-1100 {
+        display: none;
+    }
+    .down-end-aside-600 {
+        display: block;
+        margin-top: 700px;
+    }
+    hr {
+        background-color: gray;
+    }
+    .arrow {
+        font-size: 8px;
+        margin-left: 5px;
+    }
+    .circle-user {
+        font-size: 30px;
+        margin-left: 10px;
+    }
 }
