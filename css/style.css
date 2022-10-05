@@ -3,3 +3,35 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    height: 100vh;
+}
+
+header {      
+    position: fixed; 
+    right: 0;
+    left: 300px;
+    background-color: red;
+}
+
+.page-container {
+    display: flex;
+    height: calc(100% - 80px);
+    background-color: aqua;
+}
+
+aside {
+    width: 300px;
+    background-color: blueviolet;
+}
+
+main {
+    width: calc(100% - 300px);
+    overflow-y: auto
+}
+
+footer {
+    height: 80px;
+    background-color: bisque;
+}
