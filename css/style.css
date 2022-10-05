@@ -123,6 +123,35 @@ i {
     align-items: center;
 }
 
+/* -------
+    FOOTER
+    ------ */
+    .container-footer {
+        width: 100%;
+        display: flex;
+        border: 1px solid white;
+        height: 100%;
+    }
+
+    .col-left {
+        width: calc(100% / 3);
+        background-color: blueviolet;
+        border: 1px solid red;
+    }
+
+    .col-center {
+        width: calc(100% / 3);
+        background-color: blueviolet;
+        border: 1px solid red;
+    }
+
+    .col-right {
+        width: calc(100% / 3);
+        background-color: blueviolet;
+        border: 1px solid red;
+    }
+
+
 
 @media screen and (max-width:660px) {
     .container {
