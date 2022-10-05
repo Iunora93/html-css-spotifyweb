@@ -135,19 +135,19 @@ i {
 
     .col-left {
         width: calc(100% / 3);
-        background-color: blueviolet;
+        background-color: #282828;
         border: 1px solid red;
     }
 
     .col-center {
         width: calc(100% / 3);
-        background-color: blueviolet;
+        background-color: #282828;
         border: 1px solid red;
     }
 
     .col-right {
         width: calc(100% / 3);
-        background-color: blueviolet;
+        background-color: #282828;
         border: 1px solid red;
     }
 
@@ -168,8 +168,8 @@ i {
         position: fixed; 
         right: 0;
         left: 50px;
-        background-color: red;
-    }
+/*         background-color: red;
+ */    }
     .top-aside-700-1100 {
         display: none;
     }
