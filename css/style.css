@@ -132,6 +132,7 @@ i {
         display: flex;
         border: 1px solid white;
         height: 100%;
+        color: gray;
     }
 
     .col-left {
@@ -161,6 +162,7 @@ i {
 
     .container-right {
         display: flex;
+        align-items: center;
     }
 
     .img-footer {
@@ -169,6 +171,11 @@ i {
     .name-brano {
         margin-left: 15px;
     }
+
+    i {
+        margin-right: 10px;
+    }
+
 @media screen and (max-width:660px) {
     .container {
         text-align: center;
