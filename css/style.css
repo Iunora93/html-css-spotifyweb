@@ -20,7 +20,7 @@ header {
 .page-container {
     display: flex;
     height: calc(100% - 80px);
-    background-color: aqua;
+    
     color: gray;
 }
 
@@ -37,12 +37,13 @@ aside {
 
 main {
     width: calc(100% - 300px);
-    overflow-y: auto
+    overflow-y: auto;
+    background-color: #141922;
 }
 
 footer {
     height: 80px;
-    background-color: bisque;
+    
 }
 
 .top-aside-600 {
@@ -206,6 +207,8 @@ i {
 /* -------------
     MAIN
     ------------ */
+
+    /* nav */
     .container-nav {
         width: 100%;
         margin-top: 90px;
@@ -229,4 +232,67 @@ i {
         background-color: transparent;
         border: none;
         color: gray;
+    }
+
+    /* box */
+    .container-title-box {
+        margin: 30px 0 30px 20px;
+        color: white;
+        background-color: #141922;
+    }
+
+    .container-box {
+        display: flex;      
+        border: dashed 1px red;
+        height: 50px;       
+    }
+
+    .box-700 {
+        display: flex;      
+        border: dashed 1px red;
+        height: 50px;
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+        border: 1px solid yellow;
+        margin: 0 20px;
+    }
+    /* media 700 box */
+    @media screen and (max-width:700px) {
+        .box-700 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .box {
+            width: 50%;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+    }
+    
+
+    .container-box-fixed:last-child {
+        margin-bottom: 30px;
+        
+    }
+
+    .small-box {
+        color: gray;
+    }
+
+    .container-box-fixed {
+        width: 50%;
+        display: flex;
+        border: dashed 1px red;
+        height: 50px;
+    }
+
+    .box-fixed {
+        width: 25%;
+        height: 50px;
+        border: 1px solid yellow;
+        margin: 0 20px;
     }
