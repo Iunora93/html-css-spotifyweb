@@ -356,7 +356,11 @@ i {
         display: none;
     }
 
-    img.play-box:hover {
+    /* img.play-box:hover {
+        display: block;
+    } */
+
+    img:hover + .play-box {
         display: block;
     }
 
