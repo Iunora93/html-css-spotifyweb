@@ -15,6 +15,7 @@ header {
     right: 0;
     left: 300px;
     background-color: #080b12;
+    z-index: 1;
 }
 
 .page-container {
@@ -70,6 +71,11 @@ i {
     color: white;
     border-color: white;
     margin: 20px 5px;
+}
+
+.btn-upgrade:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 /* ---------
@@ -306,10 +312,17 @@ i {
         margin: 0px 10px;
     }
 
+    
+
     .btn-nav {
         background-color: transparent;
         border: none;
         color: gray;
+    }
+
+    .btn-nav:hover {
+        color: white;
+        cursor: pointer;
     }
 
     /* box */
@@ -331,7 +344,23 @@ i {
     .box {
         width: 100%;
         margin: 0 20px;
+        position: relative;
     }
+
+    .play-box {
+        position: absolute;
+        top: 55px;
+        left: 55px;
+        font-size: 43px;
+        color: white;
+        display: none;
+    }
+
+    .play-box:hover {
+        display: block;
+    }
+
+    
 
     .container-box-fixed {
         width: 50%;
@@ -342,6 +371,7 @@ i {
     .box-fixed {
         width: 25%;
         margin: 0 20px;
+        position: relative;
     }
     img {
         width: 100%;
@@ -387,6 +417,20 @@ i {
 
     .small-box {
         color: gray;
+    }
+
+    .icons-animation:hover {
+        transform: scale(1.5);
+        cursor: pointer;
+    }
+
+    img:hover {
+        filter: opacity(0.5);
+    }
+
+    .icons-footer-left:hover {
+        color: white;
+        cursor: pointer;
     }
 
     
