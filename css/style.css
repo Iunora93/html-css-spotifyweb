@@ -124,13 +124,17 @@ i {
     align-items: center;
 }
 
+.text-aside:hover {
+    color: white;
+    cursor: pointer;
+}
+
 /* -------
     FOOTER
     ------ */
     .container-footer {
         width: 100%;
         display: flex;
-        border: 1px solid white;
         height: 100%;
         color: gray;
     }
@@ -138,21 +142,61 @@ i {
     .col-left {
         width: 30%;
         background-color: #282828;
-        border: 1px solid red;
         display: flex;
     }
 
     .col-center {
         width: 70%;
         background-color: #282828;
-        border: 1px solid red;
+        padding: 15px;
+        color: white;
+    }
+
+    .icons-center {
+        display: flex;
+        justify-content: center;  
+    }
+    .barra-musica {
+        width: calc(100% / 2);
+        display: flex;
+        align-items: center;
+        margin: 0px 25px;
+    }
+    .short {
+        width: 30%;
+        height: 5px;
+        border: 1px solid white;
+        background: white;
+        border-radius: 100px;
+    }
+
+    .short:hover {
+        background-color: rgb(51, 160, 51);
+        border: 1px solid rgb(51, 160, 51);
+        cursor: pointer;    
+    }
+
+    .long {
+        width: 70%;
+        height: 4px;
+        border: 1px solid gray;
+        background: gray;
+        border-radius: 100px;
+    }
+    
+    .barra-center {
+        display: flex;
+        justify-content: center;
     }
 
     .col-right {
         width: 30%;
         background-color: #282828;
-        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        color: white;
     }
+    
 
     .container-left {
         display: flex;
@@ -176,6 +220,18 @@ i {
         margin-right: 10px;
     }
 
+    .icons-footer {
+        padding: 5px 7px;
+    }
+
+    .icons-footer:nth-child(3) {
+        font-size: 25px;
+        padding: 0 0;
+    }
+
+    /* .icons-footer:nth-child(1 2 4 5) {
+        padding: 15px
+    } */
 @media screen and (max-width:660px) {
     .container {
         text-align: center;
@@ -198,6 +254,7 @@ i {
     }
     .top-aside-600 {
         display: block;
+        margin-top: 10px;
     }
     .down-aside-700-1100 {
         display: none;
@@ -218,7 +275,7 @@ i {
     }
     .arrow {
         font-size: 8px;
-        margin-left: 5px;
+        margin-left: 10px;
     }
     .circle-user {
         font-size: 30px;
