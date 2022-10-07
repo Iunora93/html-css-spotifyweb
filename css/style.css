@@ -356,7 +356,7 @@ i {
         display: none;
     }
 
-    .play-box:hover {
+    img.play-box:hover {
         display: block;
     }
 
