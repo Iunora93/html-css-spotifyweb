@@ -304,12 +304,20 @@ i {
     }
 
     .text-nav {
-        height: 50px;
         background-color: #141922;
-        display: flex;
         justify-content: center;
         margin: 20px;
-        margin: 0px 10px;
+        margin: 15px 10px;
+    }
+
+    .line-bottom {
+        width: 100%;
+        border-bottom: 1px solid lightgreen;
+        display: none;
+    }
+
+    .btn-nav:hover + .line-bottom {
+        display: block;
     }
 
     
